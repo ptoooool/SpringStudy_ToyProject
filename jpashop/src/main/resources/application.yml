@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop
+    url: jdbc:h2:tcp://localhost/~/jpashop #jdbc:h2:mem:test //test url로하면 테스트용 메모리 DB로 가능하다.
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -12,7 +12,7 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
-
+#위의 것들이 없으면 spring boot는 기본적으로 memory모드로 jdbc를 동작하게 된다.
 logging:
   level:
     org.hibernate.SQL: debug

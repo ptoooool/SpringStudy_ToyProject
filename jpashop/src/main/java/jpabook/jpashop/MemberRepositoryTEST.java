@@ -2,11 +2,8 @@ package jpabook.jpashop;
 
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 @Repository
-public class MemberRepository {
+public class MemberRepositoryTEST {
 
 //    @PersistenceContext
 //    private EntityManager em; //스프링 부트가 엔티티매니저를 주입해준다.
